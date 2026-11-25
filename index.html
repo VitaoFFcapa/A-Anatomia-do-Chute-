@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a anatomia e a biomecânica do chute no futebol por meio de explicações e atividades interativas.">
+    <title>Anatomia do Chute | Futebol e Biomecânica</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo" aria-label="Anatomia do Chute - Início">
+                <span class="logo-mark">⚽</span>
+                <span>ANATOMIA <strong>DO CHUTE</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                type="button" aria-label="Abrir menu"
+                aria-expanded="false" aria-controls="navigation">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#biomecanica">Biomecânica</a>
+                <a href="#fases">Fases do chute</a>
+                <a href="#anatomia">Anatomia</a>
+                <a href="#tipos">Tipos de chute</a>
+                <a href="#simulador">Simulador</a>
+                <a href="#referencias">Referências</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="eyebrow"><span></span> CIÊNCIA • MOVIMENTO • FUTEBOL</span>
+                <h1>O que acontece<br>no corpo durante<br><span>um chute?</span></h1>
+                <p>
+                    Descubra como músculos, articulações e movimentos trabalham
+                    juntos para transformar uma ação do futebol em um movimento
+                    coordenado e potente.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#biomecanica">Explorar conteúdo <span>→</span></a>
+                    <a class="btn btn-outline" href="#simulador">Experimentar simulador</a>
+                </div>
+                <div class="hero-note">
+                    <span class="hero-note-line"></span>
+                    UMA ANÁLISE ANATÔMICA E BIOMECÂNICA
+                </div>
+            </div>
+            <div class="hero-number" aria-hidden="true">01</div>
+        </section>
+
+        <section class="intro-strip">
+            <div class="container intro-grid">
+                <div>
+                    <span class="strip-label">MAIS DO QUE UM MOVIMENTO</span>
+                    <h2>Um chute envolve<br><span>todo o corpo.</span></h2>
+                </div>
+                <p>
+                    Embora o pé entre em contato com a bola, a ação começa antes:
+                    envolve equilíbrio, coordenação, produção de força e controle
+                    muscular. Cada etapa contribui para o resultado do chute.
+                </p>
+                <a href="#fases" class="text-link">Conhecer as etapas <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="biomecanica">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">01 / FUNDAMENTOS</span>
+                        <h2>A biomecânica <span>do chute</span></h2>
+                    </div>
+                    <p>
+                        A biomecânica estuda os movimentos do corpo e as forças
+                        envolvidas neles. No futebol, ela ajuda a compreender como
+                        o jogador realiza um chute.
+                    </p>
+                </div>
+
+                <div class="concept-grid">
+                    <article class="concept-card">
+                        <span class="card-number">01</span>
+                        <div class="concept-icon">↗</div>
+                        <h3>Produção de força</h3>
+                        <p>
+                            Os músculos geram força e movimentam as articulações,
+                            permitindo que a perna acelere em direção à bola.
+                        </p>
+                        <span class="card-tag">Força muscular</span>
+                    </article>
+
+                    <article class="concept-card">
+                        <span class="card-number">02</span>
+                        <div class="concept-icon">⌁</div>
+                        <h3>Coordenação</h3>
+                        <p>
+                            Quadril, joelho, tornozelo e tronco precisam trabalhar
+                            de maneira coordenada para realizar o movimento.
+                        </p>
+                        <span class="card-tag">Controle motor</span>
+                    </article>
+
+                    <article class="concept-card">
+                        <span class="card-number">03</span>
+                        <div class="concept-icon">◎</div>
+                        <h3>Equilíbrio</h3>
+                        <p>
+                            A perna de apoio e os músculos do tronco ajudam a
+                            manter a estabilidade durante o chute.
+                        </p>
+                        <span class="card-tag">Estabilidade</span>
+                    </article>
+
+                    <article class="concept-card">
+                        <span class="card-number">04</span>
+                        <div class="concept-icon">⚡</div>
+                        <h3>Transferência de energia</h3>
+                        <p>
+                            No contato, parte da energia do movimento é transferida
+                            para a bola, influenciando sua velocidade e trajetória.
+                        </p>
+                        <span class="card-tag">Impacto</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-green" id="fases">
+            <div class="container">
+                <div class="section-heading section-heading-light">
+                    <div>
+                        <span class="eyebrow">02 / MOVIMENTO</span>
+                        <h2>As cinco fases <span>do chute</span></h2>
+                    </div>
+                    <p>
+                        O chute pode ser dividido em etapas para facilitar o
+                        entendimento dos movimentos e das estruturas envolvidas.
+                        Selecione uma fase para explorar seus detalhes.
+                    </p>
+                </div>
+
+                <div class="phase-layout">
+                    <div class="phase-selector" aria-label="Selecionar fase do chute">
+                        <button class="phase-btn active" type="button" data-phase="0" aria-pressed="true">
+                            <span>01</span><span>Preparação</span><span class="phase-arrow">→</span>
+                        </button>
+                        <button class="phase-btn" type="button" data-phase="1" aria-pressed="false">
+                            <span>02</span><span>Aproximação</span><span class="phase-arrow">→</span>
+                        </button>
+                        <button class="phase-btn" type="button" data-phase="2" aria-pressed="false">
+                            <span>03</span><span>Balanço da perna</span><span class="phase-arrow">→</span>
+                        </button>
+                        <button class="phase-btn" type="button" data-phase="3" aria-pressed="false">
+                            <span>04</span><span>Contato com a bola</span><span class="phase-arrow">→</span>
+                        </button>
+                        <button class="phase-btn" type="button" data-phase="4" aria-pressed="false">
+                            <span>05</span><span>Desaceleração</span><span class="phase-arrow">→</span>
+                        </button>
+                    </div>
+
+                    <article class="phase-detail" aria-live="polite">
+                        <div class="phase-detail-top">
+                            <span class="phase-number" id="phaseNumber">FASE 01</span>
+                            <span class="detail-indicator">ANÁLISE DO MOVIMENTO</span>
+                        </div>
+                        <h3 id="phaseTitle">Preparação</h3>
+                        <p id="phaseDescription">
+                            O jogador organiza sua postura e posiciona o corpo para iniciar o movimento.
+                        </p>
+
+                        <div class="detail-block">
+                            <span class="detail-label">O QUE ACONTECE?</span>
+                            <p id="phaseAction">
+                                O corpo busca equilíbrio. A perna de apoio começa a ser posicionada e o jogador prepara a aproximação.
+                            </p>
+                        </div>
+
+                        <div class="detail-block">
+                            <span class="detail-label">ESTRUTURAS ENVOLVIDAS</span>
+                            <p id="phaseStructures">Músculos do tronco, quadril e membros inferiores.</p>
+                        </div>
+
+                        <div class="tag-list" id="phaseTags">
+                            <span class="tag">Equilíbrio</span>
+                            <span class="tag">Postura</span>
+                            <span class="tag">Coordenação</span>
+                        </div>
+                    </article>
+                </div>
+                <p class="section-footnote">
+                    *A divisão em cinco fases é uma forma didática de estudar o movimento.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-light" id="anatomia">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">03 / ESTRUTURAS DO CORPO</span>
+                        <h2>Os músculos <span>em ação</span></h2>
+                    </div>
+                    <p>
+                        Diferentes grupos musculares participam do chute.
+                        Selecione os pontos da ilustração ou os nomes ao lado
+                        para conhecer suas funções.
+                    </p>
+                </div>
+
+                <div class="anatomy-layout">
+                    <div class="anatomy-visual">
+                        <div class="anatomy-visual-header">
+                            <span>MAPA MUSCULAR</span>
+                            <span class="live-dot">INTERATIVO</span>
+                        </div>
+
+                        <div class="anatomy-figure">
+                            <svg class="anatomy-svg" viewBox="0 0 520 540" role="img" aria-label="Ilustração dos músculos das pernas e do quadril, em vista frontal e posterior"><defs><linearGradient id="torsoFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ead9c4" stop-opacity="0"/><stop offset=".55" stop-color="#ead9c4" stop-opacity="1"/><stop offset="1" stop-color="#ead9c4" stop-opacity="1"/></linearGradient></defs><line x1="260" y1="30" x2="260" y2="520" stroke="#c4d3c4" stroke-width="1.5" stroke-dasharray="4 6"/><g transform="translate(0,0)"><path d="M84 30 L176 30 C180 80 178 120 188 160 C202 180 206 192 202 200 L58 200 C54 192 62 180 72 160 C82 120 80 84 84 30 Z" fill="url(#torsoFade)"/><ellipse cx="130" cy="528" rx="92" ry="5" fill="rgba(20,37,27,.1)"/></g><g transform="translate(-12,0)"><path d="M68 196 C58 245 64 305 80 348 C72 380 72 420 84 460 C88 475 90 488 90 498 L114 498 C110 488 112 475 116 462 C124 425 124 385 114 350 C124 306 128 250 126 200 Z" fill="#ead9c4" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="0" fill="#e4572e" d="M72 232 C64 270 70 316 84 342 L108 342 C118 318 124 280 122 246 C110 238 90 232 72 232 Z"><title>Quadríceps</title></path><path class="fiber" d="M90 246 C86 280 88 312 94 336"/><path class="fiber" d="M106 252 C106 284 104 312 100 336"/><ellipse cx="96" cy="352" rx="14" ry="11" fill="#f3e7d6" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="3" fill="#b3203a" d="M100 184 C112 184 124 196 126 214 C128 232 124 256 118 278 C108 268 100 246 96 224 C92 206 92 192 100 184 Z"><title>Iliopsoas</title></path><path class="svg-muscle" data-muscle="5" fill="#2f6fdb" d="M82 380 C76 410 80 446 88 476 L98 476 C102 446 102 410 98 380 Z"><title>Tibial anterior</title></path><path class="fiber" d="M91 388 L92 470"/><path d="M88 492 L114 492 L116 506 Q134 510 136 520 Q136 527 128 527 L80 527 Q73 527 75 518 Q78 508 88 506 Z" fill="#14532d"/><path d="M76 523.5 L135 523.5" stroke="#f0fdf4" stroke-width="2.5" stroke-linecap="round" fill="none"/></g><g transform="matrix(-1 0 0 1 272 0)"><path d="M68 196 C58 245 64 305 80 348 C72 380 72 420 84 460 C88 475 90 488 90 498 L114 498 C110 488 112 475 116 462 C124 425 124 385 114 350 C124 306 128 250 126 200 Z" fill="#ead9c4" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="0" fill="#e4572e" d="M72 232 C64 270 70 316 84 342 L108 342 C118 318 124 280 122 246 C110 238 90 232 72 232 Z"><title>Quadríceps</title></path><path class="fiber" d="M90 246 C86 280 88 312 94 336"/><path class="fiber" d="M106 252 C106 284 104 312 100 336"/><ellipse cx="96" cy="352" rx="14" ry="11" fill="#f3e7d6" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="3" fill="#b3203a" d="M100 184 C112 184 124 196 126 214 C128 232 124 256 118 278 C108 268 100 246 96 224 C92 206 92 192 100 184 Z"><title>Iliopsoas</title></path><path class="svg-muscle" data-muscle="5" fill="#2f6fdb" d="M82 380 C76 410 80 446 88 476 L98 476 C102 446 102 410 98 380 Z"><title>Tibial anterior</title></path><path class="fiber" d="M91 388 L92 470"/><path d="M88 492 L114 492 L116 506 Q134 510 136 520 Q136 527 128 527 L80 527 Q73 527 75 518 Q78 508 88 506 Z" fill="#14532d"/><path d="M76 523.5 L135 523.5" stroke="#f0fdf4" stroke-width="2.5" stroke-linecap="round" fill="none"/></g><text class="view-label" x="130" y="18" text-anchor="middle">Frente</text><g transform="translate(260,0)"><path d="M84 30 L176 30 C180 80 178 120 188 160 C202 180 206 192 202 200 L58 200 C54 192 62 180 72 160 C82 120 80 84 84 30 Z" fill="url(#torsoFade)"/><ellipse cx="130" cy="528" rx="92" ry="5" fill="rgba(20,37,27,.1)"/></g><g transform="translate(248,0)"><path d="M68 196 C58 245 64 305 80 348 C72 380 72 420 84 460 C88 475 90 488 90 498 L114 498 C110 488 112 475 116 462 C124 425 124 385 114 350 C124 306 128 250 126 200 Z" fill="#ead9c4" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="1" fill="#1d8a7f" d="M72 240 C66 280 72 320 84 344 L110 344 C120 320 124 282 123 244 C108 252 88 250 72 240 Z"><title>Isquiotibiais</title></path><path class="fiber" d="M92 258 C88 290 90 320 96 340"/><path class="fiber" d="M108 258 C108 290 106 320 102 340"/><path d="M84 354 Q98 360 114 354" fill="none" stroke="#cdb79c" stroke-width="1.8" stroke-linecap="round"/><path class="svg-muscle" data-muscle="2" fill="#cf8a12" d="M68 198 C66 170 84 150 125 156 C129 184 129 212 123 228 C100 242 76 232 68 198 Z"><title>Glúteo máximo</title></path><path class="fiber" d="M84 176 C96 190 108 204 118 220"/><path class="fiber" d="M78 198 C92 208 104 218 112 230"/><path class="svg-muscle" data-muscle="4" fill="#7b4fb0" d="M84 372 C72 396 78 436 96 474 C114 436 122 396 112 372 C104 380 92 380 84 372 Z"><title>Gastrocnêmio</title></path><path class="fiber" d="M98 382 L98 462"/><path d="M94 470 L100 470 L99 494 L95 494 Z" fill="#e3cfb2"/><path d="M88 492 L114 492 L116 506 Q134 510 136 520 Q136 527 128 527 L80 527 Q73 527 75 518 Q78 508 88 506 Z" fill="#14532d"/><path d="M76 523.5 L135 523.5" stroke="#f0fdf4" stroke-width="2.5" stroke-linecap="round" fill="none"/></g><g transform="matrix(-1 0 0 1 532 0)"><path d="M68 196 C58 245 64 305 80 348 C72 380 72 420 84 460 C88 475 90 488 90 498 L114 498 C110 488 112 475 116 462 C124 425 124 385 114 350 C124 306 128 250 126 200 Z" fill="#ead9c4" stroke="#cdb79c" stroke-width="1.5"/><path class="svg-muscle" data-muscle="1" fill="#1d8a7f" d="M72 240 C66 280 72 320 84 344 L110 344 C120 320 124 282 123 244 C108 252 88 250 72 240 Z"><title>Isquiotibiais</title></path><path class="fiber" d="M92 258 C88 290 90 320 96 340"/><path class="fiber" d="M108 258 C108 290 106 320 102 340"/><path d="M84 354 Q98 360 114 354" fill="none" stroke="#cdb79c" stroke-width="1.8" stroke-linecap="round"/><path class="svg-muscle" data-muscle="2" fill="#cf8a12" d="M68 198 C66 170 84 150 125 156 C129 184 129 212 123 228 C100 242 76 232 68 198 Z"><title>Glúteo máximo</title></path><path class="fiber" d="M84 176 C96 190 108 204 118 220"/><path class="fiber" d="M78 198 C92 208 104 218 112 230"/><path class="svg-muscle" data-muscle="4" fill="#7b4fb0" d="M84 372 C72 396 78 436 96 474 C114 436 122 396 112 372 C104 380 92 380 84 372 Z"><title>Gastrocnêmio</title></path><path class="fiber" d="M98 382 L98 462"/><path d="M94 470 L100 470 L99 494 L95 494 Z" fill="#e3cfb2"/><path d="M88 492 L114 492 L116 506 Q134 510 136 520 Q136 527 128 527 L80 527 Q73 527 75 518 Q78 508 88 506 Z" fill="#14532d"/><path d="M76 523.5 L135 523.5" stroke="#f0fdf4" stroke-width="2.5" stroke-linecap="round" fill="none"/></g><text class="view-label" x="390" y="18" text-anchor="middle">Costas</text></svg>
+
+                            <button class="muscle-point point-quad" type="button" data-muscle="0" aria-label="Ver quadríceps">1</button>
+                            <button class="muscle-point point-ham" type="button" data-muscle="1" aria-label="Ver isquiotibiais">2</button>
+                            <button class="muscle-point point-glute" type="button" data-muscle="2" aria-label="Ver glúteo máximo">3</button>
+                            <button class="muscle-point point-iliopsoas" type="button" data-muscle="3" aria-label="Ver iliopsoas">4</button>
+                            <button class="muscle-point point-calf" type="button" data-muscle="4" aria-label="Ver gastrocnêmio">5</button>
+                            <button class="muscle-point point-tibial" type="button" data-muscle="5" aria-label="Ver tibial anterior">6</button>
+                        </div>
+
+                        <p class="visual-caption">
+                            Vista frontal e posterior das pernas. Cada músculo tem uma cor e um número, os mesmos usados na lista ao lado.
+                        </p>
+                    </div>
+
+                    <div class="anatomy-information">
+                        <div class="muscle-menu" id="muscleMenu" aria-label="Selecionar grupo muscular"></div>
+
+                        <article class="muscle-panel" aria-live="polite">
+                            <span class="detail-label">GRUPO MUSCULAR SELECIONADO</span>
+                            <h3 id="muscleTitle">Quadríceps</h3>
+                            <p id="muscleDescription">
+                                Grupo muscular localizado na parte anterior da coxa. Participa da extensão do joelho, movimento importante durante a aceleração da perna no chute.
+                            </p>
+                            <div class="tag-list" id="muscleTags">
+                                <span class="tag">Coxa</span>
+                                <span class="tag">Extensão do joelho</span>
+                                <span class="tag">Aceleração</span>
+                            </div>
+                        </article>
+
+                        <div class="anatomy-tip">
+                            <span class="tip-icon">✦</span>
+                            <p>
+                                <strong>Observe:</strong> os músculos não trabalham isoladamente.
+                                Eles atuam em conjunto para produzir e controlar o movimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="tipos">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">04 / TÉCNICA</span>
+                        <h2>Tipos de <span>chute</span></h2>
+                    </div>
+                    <p>
+                        A região do pé utilizada no contato com a bola influencia
+                        a precisão, a potência e a trajetória do chute.
+                    </p>
+                </div>
+
+                <div class="kick-grid">
+                    <article class="kick-card">
+                        <div class="kick-visual kick-visual-instep"><span>01</span>⚽</div>
+                        <div class="kick-card-content">
+                            <span class="card-tag">POTÊNCIA</span>
+                            <h3>Peito do pé</h3>
+                            <p>
+                                Utiliza a região superior do pé. É bastante empregado
+                                em chutes fortes e de longa distância.
+                            </p>
+                            <div class="kick-meta"><span>Contato</span><strong>Parte superior do pé</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="kick-card">
+                        <div class="kick-visual kick-visual-inside"><span>02</span>⚽</div>
+                        <div class="kick-card-content">
+                            <span class="card-tag">PRECISÃO</span>
+                            <h3>Chapa</h3>
+                            <p>
+                                Utiliza a parte interna do pé, oferecendo uma
+                                superfície maior de contato e facilitando a direção.
+                            </p>
+                            <div class="kick-meta"><span>Contato</span><strong>Parte interna do pé</strong></div>
+                        </div>
+                    </article>
+
+                    <article class="kick-card">
+                        <div class="kick-visual kick-visual-outside"><span>03</span>⚽</div>
+                        <div class="kick-card-content">
+                            <span class="card-tag">EFEITO</span>
+                            <h3>Três dedos</h3>
+                            <p>
+                                O contato ocorre na região externa do pé e pode
+                                produzir uma trajetória com efeito lateral.
+                            </p>
+                            <div class="kick-meta"><span>Contato</span><strong>Parte externa do pé</strong></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section simulator-section" id="simulador">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">05 / EXPERIMENTE</span>
+                        <h2>Simulador <span>de chute</span></h2>
+                    </div>
+                    <p>
+                        Modifique os parâmetros e observe uma representação
+                        visual de como diferentes condições alteram o movimento da bola.
+                    </p>
+                </div>
+
+                <div class="simulator-layout">
+                    <div class="simulator-controls">
+                        <div class="control-heading">
+                            <span class="control-icon">⚙</span>
+                            <div>
+                                <h3>Configurações</h3>
+                                <p>Personalize seu chute</p>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-label">
+                                <label for="distance">Distância</label>
+                                <output id="distanceValue" for="distance">20 m</output>
+                            </div>
+                            <input type="range" id="distance" min="5" max="40" value="20" step="1">
+                            <div class="range-labels"><span>5 m</span><span>40 m</span></div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-label">
+                                <label for="strength">Força</label>
+                                <output id="strengthValue" for="strength">70%</output>
+                            </div>
+                            <input type="range" id="strength" min="10" max="100" value="70" step="5">
+                            <div class="range-labels"><span>10%</span><span>100%</span></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="kickType">Tipo de chute</label>
+                            <select id="kickType">
+                                <option value="peito">Peito do pé</option>
+                                <option value="chapa">Chapa</option>
+                                <option value="tres-dedos">Três dedos</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary kick-button" id="kickButton" type="button">
+                            Chutar agora <span>→</span>
+                        </button>
+
+                        <p class="simulator-disclaimer">
+                            Simulação ilustrativa. Os resultados não representam
+                            cálculos físicos reais de uma partida.
+                        </p>
+                    </div>
+
+                    <div class="simulator-display">
+                        <div class="field-topline">
+                            <span>CAMPO DE SIMULAÇÃO</span>
+                            <span>VISÃO LATERAL</span>
+                        </div>
+
+                        <div class="football-field">
+                            <div class="field-sky"></div>
+                            <div class="field-stands">
+                                <span>STADIUM</span><span>STADIUM</span><span>STADIUM</span>
+                            </div>
+                            <div class="field-line"></div>
+                            <div class="field-center"></div>
+                            <div class="goal">
+                                <div class="goal-net"></div>
+                            </div>
+                            <div class="ball" id="ball" aria-label="Bola de futebol">⚽</div>
+                            <div class="field-ground"></div>
+                            <div class="field-distance"><span>INÍCIO</span><span>ALVO</span></div>
+                        </div>
+
+                        <div class="simulation-result" id="result" aria-live="polite">
+                            Ajuste as configurações e clique em “Chutar agora” para começar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section references-section" id="referencias">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">06 / APROFUNDAMENTO</span>
+                        <h2>Referências <span>bibliográficas</span></h2>
+                    </div>
+                    <p>
+                        Leituras científicas utilizadas como apoio para compreender
+                        a biomecânica e a análise do chute no futebol.
+                    </p>
+                </div>
+
+                <div class="reference-list">
+                    <article class="reference-item">
+                        <span class="reference-number">01</span>
+                        <div>
+                            <h3>Science and soccer: a review of the literature</h3>
+                            <p>LEES, A. Science and soccer. Sports Medicine, 1996.</p>
+                            <a href="https://doi.org/10.2165/00007256-199621040-00003" target="_blank" rel="noopener noreferrer">Consultar publicação <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="reference-item">
+                        <span class="reference-number">02</span>
+                        <div>
+                            <h3>Biomechanical characteristics and determinants of instep soccer kick</h3>
+                            <p>KELLIS, E.; KATIS, A. Journal of Sports Science and Medicine, 2007.</p>
+                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Kellis+Katis+biomechanical+characteristics+soccer+kick" target="_blank" rel="noopener noreferrer">Consultar pesquisa <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="reference-item">
+                        <span class="reference-number">03</span>
+                        <div>
+                            <h3>Biomechanics of soccer kicking</h3>
+                            <p>Estudos sobre a cinemática, a força e a coordenação durante o chute.</p>
+                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=biomechanics+soccer+kicking" target="_blank" rel="noopener noreferrer">Consultar pesquisas no PubMed <span>↗</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="references-note">
+                    As referências são sugestões de leitura e devem ser conferidas
+                    conforme a edição e os dados bibliográficos da publicação.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#inicio" class="logo footer-logo">
+                <span class="logo-mark">⚽</span>
+                <span>ANATOMIA <strong>DO CHUTE</strong></span>
+            </a>
+            <p>Uma abordagem sobre o corpo humano e a ciência por trás do futebol.</p>
+            <a href="#inicio" class="back-top">Voltar ao início ↑</a>
+        </div>
+        <div class="container footer-bottom">
+            <span>PROJETO EDUCACIONAL</span>
+            <span>ANATOMIA • BIOMECÂNICA • FUTEBOL</span>
+        </div>
+    </footer>
+
+</body>
+</html>
